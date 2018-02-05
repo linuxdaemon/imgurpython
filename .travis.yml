@@ -21,6 +21,9 @@ deploy:
     on:
       tags: true
       repo: linuxdaemon/imgurpython
+      python:
+        - '2.7'
+        - '3.6'
   - provider: pypi
     user: linuxdaemon
     password:
