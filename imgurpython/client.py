@@ -58,7 +58,7 @@ class AuthWrapper(object):
 
 class ImgurClient(object):
     allowed_album_fields = {
-        'ids', 'title', 'description', 'privacy', 'layout', 'cover'
+        'ids', 'deletehashes', 'title', 'description', 'privacy', 'layout', 'cover'
     }
 
     allowed_advanced_search_fields = {
