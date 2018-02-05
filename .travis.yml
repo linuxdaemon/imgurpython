@@ -1,11 +1,24 @@
 language: python
+python:
+  - "2.7"
+  - "3.2"
+  - "3.3"
+  - "3.4"
+  - "3.5"
+  - "3.6"
+  - "3.7-dev"
+  - "nightly"
+  - "pypy3"
+
 script:
-    - python -m compileall
+  - python -m compileall
+
 deploy:
   provider: pypi
-  user: imgurops
+  user: linuxdaemon
   password:
-    secure: DBBXzMOm037T4XUmfo0Gu9mAytw2DCYJT8i0KgihKYxS+uslF+dwHf2clBEWDLUE0xkXhqXetq+sNgfshovGKIqZanASYZ/6Zf5ikg10ApgaBidObv2XMYNyuQxL8Gqv9l2tdlWqdUoOJzRBMV2Nh0B3BJ9hG7V5NFMDcfG/qyo=
+    secure: RncjV5af0zgEp3rB6NJrSiZ9px02EDuI9R/a3Hz0KnxiXSTNcGY0qwDDqZLRiOgIj/1XguXrZydSI7GklMmUu/zJFLerZYHWn+0GS3DjhIKRhmXucsRGFIaORiZ2ApeZNy+52kCojP4LS4spLTyAVT2qii6zHhh0G+3MG9wBKiy1kIMr4mO74suPP/fFtmF7ADUGDr6wZE0yFZ7d39BDFF5OZg2QvJTxw/NOJklJWu0JNL5uWjLxoBXsg9LB3mgbGK7NfhDBVJD5nEfhiLODboeGo8bU2hltl2fnR1Vp4Igw5FkFANAYg5+xSX67/H9gAYSUPq2UVSu9O+Iw9v+sURGd7IsqRmMNwkrN2PcNvsrt5s9mrh6JMI9Hs9XJ8InWUAwUQvJeQ4bCqyBc/qmwtN6KPJYyQnDYab7MYX6QkQM/2fnrY1jK8wA1/IV3dw0NrKtqM/LNu3M3GFu7TltXaUpLhpxm5GjLsEMHOtg3atTmgwRRO1df81iJUiqvhMLPbOUxAQtoHDiMz7hnQfMlBT9JFRy6ZNnRKkG1hPmOn+QIBFJzLMw5CQQIbBC6UbdQMnabzHPM9WYJZB6SA9BCLXj8Fbi19jmoPFr55SV4fxJQHf+QS9j11lyHGFn6Rei5G/dvAox74r1xLi7Z4ZK//V+Ku4+GhAj26oY1CQB23XA=
+  distributions: "sdist bdist_wheel"
   on:
     tags: true
-    repo: Imgur/imgurpython
+    repo: linuxdaemon/imgurpython
