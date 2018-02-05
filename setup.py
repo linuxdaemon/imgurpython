@@ -6,22 +6,22 @@ here = path.abspath(path.dirname(__file__))
 
 # Get the long description from the relevant file
 setup(
-    name='imgurpython',
+    name='imgurapi',
 
     # Versions should comply with PEP440.  For a discussion on single-sourcing
     # the version across setup.py and the project code, see
     # http://packaging.python.org/en/latest/tutorial.html#version
     version='1.1.7',
 
-    description='Official Imgur python library with OAuth2 and samples',
+    description='Fork of the Official Imgur python library with OAuth2 and samples',
     long_description='',
 
     # The project's main homepage.
-    url='https://github.com/Imgur/imgurpython',
+    url='https://github.com/linuxdaemon/imgurpython',
 
     # Author details
-    author='Imgur Inc.',
-    author_email='api@imgur.com',
+    author='linuxdaemon',
+    author_email='linuxdaemon.irc+pypi@gmail.com',
 
     # Choose your license
     license='MIT',

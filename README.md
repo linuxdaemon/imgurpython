@@ -1,5 +1,3 @@
-# The imgurpython project is no longer supported.
-
 imgurpython
 ===========
 
@@ -29,7 +27,7 @@ The best way to reach out to Imgur for API support is emailing us at api@imgur.c
 Installation
 ------------
 
-    pip install imgurpython
+    pip install imgurapi
 
 Library Usage
 ------------
