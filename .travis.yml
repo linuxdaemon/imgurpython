@@ -13,11 +13,20 @@ script:
   - python -m compileall
 
 deploy:
-  provider: pypi
-  user: linuxdaemon
-  password:
-    secure: RncjV5af0zgEp3rB6NJrSiZ9px02EDuI9R/a3Hz0KnxiXSTNcGY0qwDDqZLRiOgIj/1XguXrZydSI7GklMmUu/zJFLerZYHWn+0GS3DjhIKRhmXucsRGFIaORiZ2ApeZNy+52kCojP4LS4spLTyAVT2qii6zHhh0G+3MG9wBKiy1kIMr4mO74suPP/fFtmF7ADUGDr6wZE0yFZ7d39BDFF5OZg2QvJTxw/NOJklJWu0JNL5uWjLxoBXsg9LB3mgbGK7NfhDBVJD5nEfhiLODboeGo8bU2hltl2fnR1Vp4Igw5FkFANAYg5+xSX67/H9gAYSUPq2UVSu9O+Iw9v+sURGd7IsqRmMNwkrN2PcNvsrt5s9mrh6JMI9Hs9XJ8InWUAwUQvJeQ4bCqyBc/qmwtN6KPJYyQnDYab7MYX6QkQM/2fnrY1jK8wA1/IV3dw0NrKtqM/LNu3M3GFu7TltXaUpLhpxm5GjLsEMHOtg3atTmgwRRO1df81iJUiqvhMLPbOUxAQtoHDiMz7hnQfMlBT9JFRy6ZNnRKkG1hPmOn+QIBFJzLMw5CQQIbBC6UbdQMnabzHPM9WYJZB6SA9BCLXj8Fbi19jmoPFr55SV4fxJQHf+QS9j11lyHGFn6Rei5G/dvAox74r1xLi7Z4ZK//V+Ku4+GhAj26oY1CQB23XA=
-  distributions: "sdist bdist_wheel"
-  on:
-    tags: true
-    repo: linuxdaemon/imgurpython
+  - provider: pypi
+    user: linuxdaemon
+    password:
+      secure: RncjV5af0zgEp3rB6NJrSiZ9px02EDuI9R/a3Hz0KnxiXSTNcGY0qwDDqZLRiOgIj/1XguXrZydSI7GklMmUu/zJFLerZYHWn+0GS3DjhIKRhmXucsRGFIaORiZ2ApeZNy+52kCojP4LS4spLTyAVT2qii6zHhh0G+3MG9wBKiy1kIMr4mO74suPP/fFtmF7ADUGDr6wZE0yFZ7d39BDFF5OZg2QvJTxw/NOJklJWu0JNL5uWjLxoBXsg9LB3mgbGK7NfhDBVJD5nEfhiLODboeGo8bU2hltl2fnR1Vp4Igw5FkFANAYg5+xSX67/H9gAYSUPq2UVSu9O+Iw9v+sURGd7IsqRmMNwkrN2PcNvsrt5s9mrh6JMI9Hs9XJ8InWUAwUQvJeQ4bCqyBc/qmwtN6KPJYyQnDYab7MYX6QkQM/2fnrY1jK8wA1/IV3dw0NrKtqM/LNu3M3GFu7TltXaUpLhpxm5GjLsEMHOtg3atTmgwRRO1df81iJUiqvhMLPbOUxAQtoHDiMz7hnQfMlBT9JFRy6ZNnRKkG1hPmOn+QIBFJzLMw5CQQIbBC6UbdQMnabzHPM9WYJZB6SA9BCLXj8Fbi19jmoPFr55SV4fxJQHf+QS9j11lyHGFn6Rei5G/dvAox74r1xLi7Z4ZK//V+Ku4+GhAj26oY1CQB23XA=
+    distributions: "bdist_wheel"
+    on:
+      tags: true
+      repo: linuxdaemon/imgurpython
+  - provider: pypi
+    user: linuxdaemon
+    password:
+      secure: RncjV5af0zgEp3rB6NJrSiZ9px02EDuI9R/a3Hz0KnxiXSTNcGY0qwDDqZLRiOgIj/1XguXrZydSI7GklMmUu/zJFLerZYHWn+0GS3DjhIKRhmXucsRGFIaORiZ2ApeZNy+52kCojP4LS4spLTyAVT2qii6zHhh0G+3MG9wBKiy1kIMr4mO74suPP/fFtmF7ADUGDr6wZE0yFZ7d39BDFF5OZg2QvJTxw/NOJklJWu0JNL5uWjLxoBXsg9LB3mgbGK7NfhDBVJD5nEfhiLODboeGo8bU2hltl2fnR1Vp4Igw5FkFANAYg5+xSX67/H9gAYSUPq2UVSu9O+Iw9v+sURGd7IsqRmMNwkrN2PcNvsrt5s9mrh6JMI9Hs9XJ8InWUAwUQvJeQ4bCqyBc/qmwtN6KPJYyQnDYab7MYX6QkQM/2fnrY1jK8wA1/IV3dw0NrKtqM/LNu3M3GFu7TltXaUpLhpxm5GjLsEMHOtg3atTmgwRRO1df81iJUiqvhMLPbOUxAQtoHDiMz7hnQfMlBT9JFRy6ZNnRKkG1hPmOn+QIBFJzLMw5CQQIbBC6UbdQMnabzHPM9WYJZB6SA9BCLXj8Fbi19jmoPFr55SV4fxJQHf+QS9j11lyHGFn6Rei5G/dvAox74r1xLi7Z4ZK//V+Ku4+GhAj26oY1CQB23XA=
+    distributions: "sdist"
+    on:
+      tags: true
+      repo: linuxdaemon/imgurpython
+      python: '3.6'
